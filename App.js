@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, TextInput, View, Button, Image } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 import Login from './components/Login';
 
 class App extends React.Component {
@@ -13,6 +14,7 @@ class App extends React.Component {
           <Image style={styles.image} source={{ uri: image }} />
           <View style={styles.info}>
             <Text style={styles.name}>{name}</Text>
+            <Icon name="ios-heart-empty" size={30} color="#900" />
           </View>
         </View>
       </View>
@@ -39,10 +41,11 @@ const styles = StyleSheet.create({
 
   info: {
     flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
   name: {
+    paddingTop: '0.5em',
     fontSize: 20,
   },
 });
