@@ -1,5 +1,5 @@
-import React from "react";
-import { StyleSheet, Text, TextInput, View, Button } from "react-native";
+import React from 'react';
+import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 
 export default function Login() {
   return (
@@ -13,8 +13,8 @@ export default function Login() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center"
-  }
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });
